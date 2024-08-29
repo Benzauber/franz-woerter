@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Unité 2 (Karten)</title>
+  </head>
+  <body>
+    <div id="cards" onclick="process2()">
+      <br />
+      <h2 style="text-align: center" id="text">Beginnen</h2>
+      <br />
+      <br />
+      <h2 style="text-align: center; display: none" id="text2"></h2>
+      <p id="press">Press to answer</p>
+    </div>
+    <table>
+      <tr>
+        <td>
+          <p id="canNot" onclick="Return()">Kann Ich nicht</p>
+        </td>
+        <td>
+          <p id="can" onclick="next()">Start</p>
+        </td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Unité 2 (Standard)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="card">
+    <div class="question">La voie</div>
+    <input type="text" class="answer" data-answer="das Gleis" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Le quai</div>
+    <input type="text" class="answer" data-answer="das Perron, der Bahnsteig" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Le départ</div>
+    <input type="text" class="answer" data-answer="die Abfahrt" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">L’arrivée</div>
+    <input type="text" class="answer" data-answer="die Ankunft" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Le contrôleur/la contrôleuse</div>
+    <input type="text" class="answer" data-answer="der Zugbegleiter/die Zugbegleiterin" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">L’annonce</div>
+    <input type="text" class="answer" data-answer="die Lautsprecherdurchsage" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Le train arrive sur la voie 5.</div>
+    <input type="text" class="answer" data-answer="Der Zug kommt auf Gleis 5 an." placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">À l’heure</div>
+    <input type="text" class="answer" data-answer="pünktlich" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">En retard</div>
+    <input type="text" class="answer" data-answer="verspätet" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Être annulé/annulée</div>
+    <input type="text" class="answer" data-answer="ausfallen" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Le train est annulé.</div>
+    <input type="text" class="answer" data-answer="Der Zug fällt aus." placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Présenter le billet</div>
+    <input type="text" class="answer" data-answer="das Billett zeigen" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Monter dans le train</div>
+    <input type="text" class="answer" data-answer="in den Zug einsteigen" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Descendre du train</div>
+    <input type="text" class="answer" data-answer="aus dem Zug aussteigen" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Changer de train</div>
+    <input type="text" class="answer" data-answer="umsteigen" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Les gens montent dans le train.</div>
+    <input type="text" class="answer" data-answer="Die Leute steigen in den Zug ein." placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Le wagon</div>
+    <input type="text" class="answer" data-answer="der Zugwagen" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Le compartiment</div>
+    <input type="text" class="answer" data-answer="das Zugabteil" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Le siège</div>
+    <input type="text" class="answer" data-answer="der Sitz" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">La fenêtre</div>
+    <input type="text" class="answer" data-answer="das Fenster" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">La valise</div>
+    <input type="text" class="answer" data-answer="der Koffer" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">La jeune femme a rangé sa valise.</div>
+    <input type="text" class="answer" data-answer="Die junge Frau hat ihren Koffer verstaut." placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Ranger</div>
+    <input type="text" class="answer" data-answer="verstauen, wegräumen" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Quitter</div>
+    <input type="text" class="answer" data-answer="verlassen" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Observer</div>
+    <input type="text" class="answer" data-answer="beobachten" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">L’homme musclé a quitté le compartiment.</div>
+    <input type="text" class="answer" data-answer="Der muskulöse Mann hat das Zugabteil verlassen." placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Le passager/la passagère</div>
+    <input type="text" class="answer" data-answer="der Zugreisende/die Zugreisende" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">Les passagers sont descendus du train.</div>
+    <input type="text" class="answer" data-answer="Die Zugreisenden sind aus dem Zug ausgestiegen." placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">un touriste</div>
+    <input type="text" class="answer" data-answer="ein Tourist" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">un voyageur</div>
+    <input type="text" class="answer" data-answer="ein Reisender" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+  <div class="card">
+    <div class="question">avant</div>
+    <input type="text" class="answer" data-answer="vor" placeholder="Geben Sie die Antwort ein" onblur="checkAnswer(this, this.getAttribute('data-answer'))">
+  </div>
+
+  <!-- Weitere Karten hier einfügen -->
+
+  <button class="swap-button" onclick="swapQA()"><i class="fas fa-exchange-alt"></i></button>
+</body>
+</html>
