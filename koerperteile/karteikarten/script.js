@@ -43,7 +43,7 @@ function process() {
       document.getElementById("text2").innerHTML = "le genou";
       break;
     case 7:
-      document.getElementById("text").innerHTML = "der Fuß";
+      document.getElementById("text").innerHTML = "der Fuss";
       document.getElementById("text2").innerHTML = "le pied";
       break;
     case 8:
