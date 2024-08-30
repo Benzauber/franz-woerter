@@ -7,8 +7,8 @@ var easteregg = 0;
 var audio = false;
 var wrong = 0;
 
-var correctAudio = new Audio('correct-answer.wav');
-var wrongAudio = new Audio('wrong-answer.wav');
+var correctAudio = new Audio("correct-answer.wav");
+var wrongAudio = new Audio("wrong-answer.wav");
 
 function Return() {
   returnCards.push(cards);
@@ -73,16 +73,72 @@ function process() {
     case 14:
       document.getElementById("text").innerHTML = "die Hüfte";
       document.getElementById("text2").innerHTML = "la hanche";
+      break;
+    case 15:
+      document.getElementById("text").innerHTML = "beugen";
+      document.getElementById("text2").innerHTML = "plier";
+      break;
+    case 16:
+      document.getElementById("text").innerHTML = "heben";
+      document.getElementById("text2").innerHTML = "lever";
+      break;
+    case 17:
+      document.getElementById("text").innerHTML = "senken";
+      document.getElementById("text2").innerHTML = "baisser";
+      break;
+    case 18:
+      document.getElementById("text").innerHTML = "hin und her schwingen";
+      document.getElementById("text2").innerHTML = "balancer";
+      break;
+    case 19:
+      document.getElementById("text").innerHTML = "neigen";
+      document.getElementById("text2").innerHTML = "pencher";
+      break;
+    case 20:
+      document.getElementById("text").innerHTML = "kreuzen";
+      document.getElementById("text2").innerHTML = "croiser";
+      break;
+    case 21:
+      document.getElementById("text").innerHTML = "spreizen";
+      document.getElementById("text2").innerHTML = "écarter";
+      break;
+    case 22:
+      document.getElementById("text").innerHTML = "drehen";
+      document.getElementById("text2").innerHTML = "tourner";
+      break;
+    case 23:
+      document.getElementById("text").innerHTML = "berühren";
+      document.getElementById("text2").innerHTML = "toucher";
+      break;
+    case 24:
+      document.getElementById("text").innerHTML = "bewegen";
+      document.getElementById("text2").innerHTML = "bouger";
+      break;
+    case 25:
+      document.getElementById("text").innerHTML = "strecken";
+      document.getElementById("text2").innerHTML = "tendre";
+      break;
+    case 26:
+      document.getElementById("text").innerHTML = "vorwärts gehen";
+      document.getElementById("text2").innerHTML = "avancer";
+      break;
+    case 27:
+      document.getElementById("text").innerHTML = "rückwärts gehen";
+      document.getElementById("text2").innerHTML = "reculer";
+      break;
+    case 14:
+      document.getElementById("text").innerHTML = "die Hüfte";
+      document.getElementById("text2").innerHTML = "la hanche";
       complet = 1;
       finish = 1;
-      break; 
+      break;
   }
 }
 
 function process2() {
   easteregg++;
-  if (easteregg == 13){
-    location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+  if (easteregg == 13) {
+    location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
   }
   if (again != 1) {
     document.getElementById("text2").style.display = "block";
@@ -109,35 +165,31 @@ function next() {
     document.getElementById("can").innerHTML = "Kann Ich";
     document.getElementById("canNot").style.display = "block";
   }
-  if (cards > 1  && audio == true){
-    if (wrong == 1){
+  if (cards > 1 && audio == true) {
+    if (wrong == 1) {
       wrongAudio.play();
       wrong = 0;
-    }else{
+    } else {
       correctAudio.play();
     }
-    
   }
   process();
   document.getElementById("text2").style.display = "none";
   console.log(cards, returnCards, complet, finish, again);
-
-  
 }
-function mute(){
+function mute() {
   // Hole das Icon-Element
-  const icon = document.querySelector('.swap-button i');
+  const icon = document.querySelector(".swap-button i");
   // Überprüfe, ob das Icon aktuell auf "mute" steht
-  if (icon.classList.contains('fa-volume-mute')) {
-     // Ändere das Icon zu "volume-up"
-    icon.classList.remove('fa-volume-mute');
-    icon.classList.add('fa-volume-up');
+  if (icon.classList.contains("fa-volume-mute")) {
+    // Ändere das Icon zu "volume-up"
+    icon.classList.remove("fa-volume-mute");
+    icon.classList.add("fa-volume-up");
     audio = true;
   } else {
     // Ändere das Icon zurück zu "mute"
-    icon.classList.remove('fa-volume-up');
-    icon.classList.add('fa-volume-mute');
+    icon.classList.remove("fa-volume-up");
+    icon.classList.add("fa-volume-mute");
     audio = false;
   }
 }
-
