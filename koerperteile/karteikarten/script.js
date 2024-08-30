@@ -126,7 +126,7 @@ function process() {
       document.getElementById("text").innerHTML = "rückwärts gehen";
       document.getElementById("text2").innerHTML = "reculer";
       break;
-    case 14:
+    case 28:
       document.getElementById("text").innerHTML = "die Hüfte";
       document.getElementById("text2").innerHTML = "la hanche";
       complet = 1;
